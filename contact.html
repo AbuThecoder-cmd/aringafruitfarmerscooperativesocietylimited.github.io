@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Aringa Farmers Cooperative</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="product.html">products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+   
+
+    <section id="call-to-action">
+        <h1>Welcome to share your thoughts with us as Family.</h1>
+        <p >You can be a great Person,Partner ,Doner and a farmer  to curry this journey with us .</p>
+        <button onclick="window.location.href='donate.html'" class="hover-effect">Donate</button>
+    </section>
+    
+    <div class="contact">
+    <h2>Join us to work together..</h2>
+        <p>we would be like you to intereact with <span>We are ready to anser your quiz towards achiving better mango production and juice together .</span></p>
+        <span><b>connect with us</b></span>
+        <form action="https://formspree.io/f/xeojokpo" id="Form" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <textarea name="message" id="text"  >Your message here please</textarea>
+            <button type="submit">submit form </button>
+        </form>
+    </div>
+    <div class="reach">
+        <div class="text">
+        <h3>Reach us</h3>
+        <p>We are always availabele to have any discussion with you .</p>
+    </div>
+        <div class="location">
+            <span>country: <b>Uganda</b></span>
+            <span>Tel:<b>0789926224</b></span>
+            <span>Email:<b>aringfruitcooperative@gmail.com</b></span>
+            <span>Districts:Yumbe -westnile-uganda.</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Aringa Farmers Cooperative. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook   <img src="images/image10.jpeg.png" class="social"></a> 
+            <a href="#">Youtube  <img src="images/image16.jpeg.png"class="social"></a> 
+            <a href="#">Instagram  <img src="images/image12.jpeg.png"class="social "></a>
+            <a href="#">Watsap  <img src="images/images15.jpeg.png" class="social"></a>
+           
+        </p>
+    </footer>
+
+    <div id="chatBox">
+        <div id="chatHeader">Live Chat</div>
+        <div id="chatBody"></div>
+        <input type="text" id="chatInput" placeholder="Ask a question...">
+        <button id="chatSend">Send</button>
+    </div>
+</body>
+</html>

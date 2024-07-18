@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Aringa Farmers Cooperative</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="prodcuts.html">Our prodcuts</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1 class="fade-in">Welcome to Aringa Fruit Farmers Cooperative society.</h1>
+        <p class="slide-in">Explore mangoes in yumbe district .</p>
+        <div id="imageSlider">
+            <img src="images/image2.jpeg.png" alt="Mango Farm Image 1" class="active">
+            <img src="images/image13.jpeg.png" alt="Mango Farm Image 2" >
+            <img src="images/image3.jpeg.jpg" alt="Mango Farm Image 3" >
+        </div>
+       <button onclick="window.location.href='contact.html'" class="hover-effect">learn more</button>
+    </section>
+
+    <section id="call-to-action">
+        <h2>Practices we paerform in naturing local mango productions with our farmers.</h2>
+        <p >Join us in making a difference in the lives of farmers.</p>
+        <div class="clarity">
+            <img src="images/image9.jpeg.png" class="practice">
+           <p>Commercializing and marketing of local mango  in yumbe,westnile .<br>
+            We ensure that local mango is transformed and made  ready consumption to the outside world.<br>
+            We have quality local mango known as kasingiri in varieties around the households in yumbe.
+         </p>
+        </div>
+       
+    </section>
+  <section id="subscription">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form action="https://formspree.io/f/xeojokpo"  id="subscribeForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aringa Farmers Cooperative. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook   <img src="images/image10.jpeg.png" class="social"></a> 
+            <a href="#">Youtube  <img src="images/image16.jpeg.png"class="social"></a> 
+            <a href="#">Instagram  <img src="images/image12.jpeg.png"class="social "></a>
+            <a href="#">Watsap  <img src="images/images15.jpeg.png" class="social"></a>
+           
+        </p>
+    </footer>
+
+    <div id="chatBox">
+        <div id="chatHeader">Live Chat</div>
+        <div id="chatBody"></div>
+        <input type="text" id="chatInput" placeholder="Ask a question...">
+        <button id="chatSend">Send</button>
+    </div>
+</body>
+</html>
