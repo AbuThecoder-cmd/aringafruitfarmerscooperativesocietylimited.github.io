@@ -1,62 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Aringa Farmers Cooperative</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Aringa Fruits Farmers Fundraiser</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   
 
-    <section id="home">
-        <h1 class="fade-in">You can be the change in the society .</h1>
-     
-        <div id="imageSlider">
-            <img src="images/image2.jpeg.png" alt="Mango Farm Image 1"class="active">
-            <img src="images/image13.jpeg.png" alt="Mango Farm Image 2">
-            <img src="images/image3.jpeg.jpg" alt="Mango Farm Image 3">
-        </div>
-       <button onclick="window.location.href='learn.html'" class="hover-effect">Take a part </button>
-    </section>
-
-     <section id="review">
-        <h2>You can donate anything to support our activities once in a while.</h2>
-        <h3>Your support means alot in building capacity and finacial stability </h3>
-       
-          
-    </section>
-  
-    
-
-    <section  id="subscription">
-        <h2>Subscribe to Our Newsletter</h2>
-        <form  action="https://formspree.io/f/xeojokpo" id="subscribeForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Aringa Farmers Cooperative. All rights reserved.</p>
-        <p>Follow us on:
-            <a href="#">Facebook   <img src="images/image10.jpeg.png" class="social"></a> 
-            <a href="#">Youtube  <img src="images/image16.jpeg.png"class="social"></a> 
-            <a href="#">Instagram  <img src="images/image12.jpeg.png"class="social "></a>
-            <a href="#">Watsap  <img src="images/images15.jpeg.png" class="social"></a>
-           
-        </p>
-    </footer>
-
-    <div id="chatBox">
-        <div id="chatHeader">Live Chat</div>
-        <div id="chatBody"></div>
-        <input type="text" id="chatInput" placeholder="Ask a question...">
-        <button id="chatSend">Send</button>
+  <header class="header">
+    <div class="container">
+      <h1>Support Aringa Fruits Farmers Cooperative Society</h1>
+      <p>Raising Funds for a Nursery Bed</p>
     </div>
+  </header>
+
+  <section class="content nursery">
+    <div class="container">
+      <h2>Why This Nursery Bed is Important</h2>
+      <p>
+        Aringa Fruits Farmers Cooperative Society is dedicated to empowering farmers and enhancing agricultural productivity in our community. To ensure sustainable growth and a continuous supply of high-quality fruits, we are raising funds to establish a <strong>nursery bed</strong> for young fruit seedlings.
+      </p>
+
+      <h2>Key Benefits:</h2>
+      <ul>
+        <li><strong>Improve Crop Yield:</strong> Healthy seedlings improve the quality and quantity of fruit production.</li>
+        <li><strong>Boost Farmers' Incomes:</strong> Better crops lead to increased harvests and market opportunities.</li>
+        <li><strong>Promote Sustainability:</strong> Resilient seedlings adapt to changing climates, preserving the environment.</li>
+      </ul>
+
+      <h2>How You Can Help:</h2>
+      <p>
+        We need your generous support to raise the necessary funds for:
+      </p>
+      <ul>
+        <li>Construction of a nursery bed structure</li>
+        <li>Purchase of seeds and materials</li>
+        <li>Training for local farmers</li>
+      </ul>
+
+      <p>
+        Every donation counts! Together, we can cultivate prosperity, sustain livelihoods, and create a brighter future for local farmers.
+      </p>
+
+      <a href="#donation-form" class="donate-btn">Donate Now</a>
+    </div>
+  </section>
+
+  <section id="donation-form" class="form-section">
+    <div class="container">
+      <h2>Make a Donation</h2>
+      <form action="#" method="post" class="donation-form">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Donation Amount:</label>
+          <select id="amount" name="amount" required>
+            <option value="" disabled selected>Select an amount</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="100">$100</option>
+            <option value="250">$250</option>
+            <option value="500">$500</option>
+            <option value="custom">Custom Amount</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="payment">Payment Method:</label>
+          <select id="payment" name="payment" required>
+            <option value="" disabled selected>Select a payment method</option>
+            <option value="credit_card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank_transfer">Bank Transfer</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Leave a Message (Optional):</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write a message..."></textarea>
+        </div>
+
+        <button type="submit" class="donate-btn">Donate Now</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Contact us at: <a href="mailto:aringafruitfarmerscooperative@gmail.com">aringafruitfarmerscooperative@gmail.com</a> | Visit our website for more details.</p>
+    </div>
+  </footer>
+
 </body>
+</html>
+
 </html>
