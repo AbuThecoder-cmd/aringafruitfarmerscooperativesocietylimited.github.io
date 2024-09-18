@@ -1646,3 +1646,194 @@ button:hover {
     padding: 1.5rem;
   }
 }
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    list-style: none;
+    padding: 10px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#call-to-action {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+}
+
+#call-to-action h1 {
+    font-size: 2em;
+    color: green;
+}
+
+#call-to-action p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hover-effect {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hover-effect:hover {
+    background-color: darkorange;
+}
+
+.my-contact {
+    background-color: white;
+    color: green;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.my-contact h2 {
+    text-align: center;
+    color: darkgreen;
+}
+
+.my-contact form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.my-contact label, .my-contact input, .my-contact textarea {
+    margin-bottom: 10px;
+}
+
+.my-contact input, .my-contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-button:hover {
+    background-color: darkgreen;
+}
+
+.reach {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.reach span {
+    display: block;
+    margin-bottom: 10px;
+    color: darkgreen;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: green;
+    color: white;
+}
+
+footer a {
+    color: orange;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Chatbox */
+#chatBox {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    background-color: white;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0 0;
+}
+
+#chatHeader {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+#chatBody {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#chatInput {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+#chatSend {
+    width: 50px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .my-contact, .reach {
+        padding: 15px;
+    }
+
+    #call-to-action h1 {
+        font-size: 1.5em;
+    }
+
+    #chatBox {
+        width: 100%;
+        right: 0;
+    }
+}
+
